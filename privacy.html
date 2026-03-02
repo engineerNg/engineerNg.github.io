@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for MB Master habit tracking app. Learn how we collect, use, and protect your data.">
-    <title>Privacy Policy - MB Master</title>
+    <meta name="description" content="Privacy Policy for Tally It Down habit tracking app. Learn how we collect, use, and protect your data.">
+    <title>Privacy Policy - Tally It Down</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">MB Master</a>
+            <a href="index.html" class="logo">Tally It Down</a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,49 +23,36 @@
     <main>
         <div class="container">
             <div class="privacy-content">
-                <h1>MB Master Privacy Policy</h1>
+                <h1>Tally It Down Privacy Policy</h1>
                 <p class="last-updated"><strong>Last Updated:</strong> March 2, 2026</p>
                 <hr>
 
                 <h2>1. Overview</h2>
-                <p>MB Master is a habit tracking application ("the App"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our App.</p>
+                <p>Tally It Down is a habit tracking application ("the App"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our App.</p>
 
                 <h2>2. Information We Collect</h2>
 
-                <h3>2.1 Information You Provide</h3>
-                <p>When you use the App, we may collect the following information:</p>
+                <h3>2.1 Authentication</h3>
+                <p>The App uses Firebase Anonymous Authentication only. This means:</p>
                 <ul>
-                    <li><strong>Account Information:</strong> When you create an account, we collect:
-                        <ul>
-                            <li>Email address (for email/password signup)</li>
-                            <li>Display name</li>
-                            <li>Profile photo URL</li>
-                        </ul>
-                    </li>
-                    <li><strong>App Settings:</strong> Language preference, theme settings</li>
-                    <li><strong>Feedback:</strong> Any feedback or requests you submit through the App</li>
+                    <li>No personal information is required to use the App</li>
+                    <li>No email, name, or other identifiable data is collected</li>
+                    <li>Firebase generates an anonymous user identifier (UUID) for each installation</li>
                 </ul>
 
                 <h3>2.2 Automatically Collected Information</h3>
                 <ul>
                     <li><strong>Usage Data:</strong> App usage events and interactions for analytics purposes</li>
-                    <li><strong>Device Identifier:</strong> Anonymous user identifier (UUID) for guest users</li>
+                    <li><strong>Device Identifier:</strong> Anonymous user identifier (UUID) for authentication</li>
                     <li><strong>Habit Records:</strong> Tags and categories you create, daily check-in records, and tracking history</li>
-                </ul>
-
-                <h3>2.3 Information from Third Parties</h3>
-                <p>When you sign in with a third-party service, we receive only the information you authorize us to access:</p>
-                <ul>
-                    <li><strong>Google Sign-In:</strong> Name, email address, and profile photo (if shared)</li>
-                    <li><strong>Sign in with Apple:</strong> Name and email address (if shared)</li>
+                    <li><strong>App Settings:</strong> Language preference, theme settings</li>
                 </ul>
 
                 <h2>3. How We Use Your Information</h2>
-                <p>We collect and use your information for the following purposes:</p>
+                <p>We use your information for the following purposes:</p>
                 <ul>
                     <li><strong>Provide Core Features:</strong> Enable habit tracking, daily check-ins, and data visualization</li>
-                    <li><strong>Data Synchronization:</strong> Sync your habit records across your devices via Firebase</li>
-                    <li><strong>Account Management:</strong> Process authentication and account-related requests</li>
+                    <li><strong>Authentication:</strong> Anonymous authentication via Firebase</li>
                     <li><strong>Analytics &amp; Improvement:</strong> Analyze usage patterns to improve app performance and user experience</li>
                     <li><strong>Customer Support:</strong> Respond to your feedback, questions, and requests</li>
                     <li><strong>Security:</strong> Detect, prevent, and address technical issues and security threats</li>
@@ -83,8 +70,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Firebase Authentication</td>
-                            <td>User authentication and account management</td>
+                            <td>Firebase Anonymous Authentication</td>
+                            <td>Anonymous user authentication</td>
                             <td>Google LLC</td>
                         </tr>
                         <tr>
@@ -92,46 +79,24 @@
                             <td>App usage analytics and crash reporting</td>
                             <td>Google LLC</td>
                         </tr>
-                        <tr>
-                            <td>Firebase Realtime Database</td>
-                            <td>Cloud data synchronization</td>
-                            <td>Google LLC</td>
-                        </tr>
-                        <tr>
-                            <td>Google Sign-In</td>
-                            <td>Third-party authentication</td>
-                            <td>Google LLC</td>
-                        </tr>
-                        <tr>
-                            <td>Sign in with Apple</td>
-                            <td>Third-party authentication</td>
-                            <td>Apple Inc.</td>
-                        </tr>
                     </tbody>
                 </table>
-                <p>These third-party service providers have access to your personal information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+                <p>These third-party service providers process anonymous data only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
 
                 <h2>5. Data Storage &amp; Security</h2>
 
                 <h3>5.1 Local Storage</h3>
                 <ul>
-                    <li>All habit records and settings are stored locally on your device using UserDefaults</li>
-                    <li>Data is isolated and protected by your unique user ID</li>
-                    <li>Local data remains on your device and is only synced when you are signed in</li>
+                    <li>All habit records and settings are stored locally on your device</li>
+                    <li>Data is isolated and protected by your anonymous user ID</li>
+                    <li>Your data remains on your device and is not transmitted to any server</li>
                 </ul>
 
-                <h3>5.2 Cloud Storage</h3>
-                <ul>
-                    <li>When you sign in, your data is securely synced to Firebase servers</li>
-                    <li>Data transmission is encrypted using HTTPS/TLS</li>
-                    <li>Firebase implements industry-standard security measures to protect your data</li>
-                </ul>
-
-                <h3>5.3 Security Measures</h3>
+                <h3>5.2 Security Measures</h3>
                 <p>We employ the following security practices:</p>
                 <ul>
-                    <li>Transport layer encryption (HTTPS/TLS) for all data transmission</li>
-                    <li>User ID data isolation to prevent unauthorized access</li>
+                    <li>Anonymous authentication with no personal data collection</li>
+                    <li>Anonymous user ID data isolation to prevent unauthorized access</li>
                     <li>Secure authentication mechanisms via Firebase</li>
                     <li>Regular security reviews and updates</li>
                 </ul>
@@ -139,12 +104,12 @@
                 <h2>6. Data Sharing &amp; Disclosure</h2>
                 <p>We respect your privacy and commit to:</p>
                 <ul>
-                    <li><strong>Not Selling Your Data:</strong> We do not sell your personal information to third parties</li>
-                    <li><strong>Limited Sharing:</strong> We do not share your personal information except as described in this policy</li>
+                    <li><strong>Not Selling Your Data:</strong> We do not sell your information to third parties</li>
+                    <li><strong>No Personal Data Collection:</strong> We do not collect any personally identifiable information</li>
+                    <li><strong>Limited Sharing:</strong> We do not share your information except as described in this policy</li>
                 </ul>
-                <p>We may share your information only in the following circumstances:</p>
+                <p>We may share anonymous usage data only in the following circumstances:</p>
                 <ul>
-                    <li><strong>With Your Consent:</strong> When you explicitly authorize us to share your information</li>
                     <li><strong>Service Providers:</strong> With third-party service providers (e.g., Firebase) who perform services on our behalf</li>
                     <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
                     <li><strong>Protection of Rights:</strong> To protect our rights, property, or safety, or that of our users</li>
@@ -152,28 +117,24 @@
                 </ul>
 
                 <h2>7. Your Rights</h2>
-                <p>You have the following rights regarding your personal information:</p>
+                <p>Since the App does not collect personal information, there is no personal data for you to access, correct, or delete. Your habit data is stored locally on your device and you have full control over it.</p>
                 <ul>
-                    <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
-                    <li><strong>Correction:</strong> Update or correct inaccurate or incomplete information</li>
-                    <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
-                    <li><strong>Data Portability:</strong> Request a copy of your data in a structured, machine-readable format</li>
-                    <li><strong>Withdraw Consent:</strong> Withdraw consent for data processing where consent is the legal basis</li>
-                    <li><strong>Opt-Out:</strong> You can opt-out of analytics by signing out or using the App in guest mode</li>
+                    <li><strong>Local Data Control:</strong> You can delete the App at any time to remove all local data</li>
+                    <li><strong>Export:</strong> You can export your tracking data through the App's export feature (if available)</li>
                 </ul>
-                <p>To exercise these rights, please contact us using the information provided in Section 11.</p>
+                <p>If you have questions about your data, please contact us using the information provided in Section 9.</p>
 
-                <h2>8. Anonymous &amp; Guest Mode</h2>
-                <p>You can use the App without creating an account. In guest mode:</p>
+                <h2>8. Anonymous Authentication</h2>
+                <p>The App uses Firebase Anonymous Authentication:</p>
                 <ul>
-                    <li>The App generates a temporary anonymous identifier (UUID)</li>
+                    <li>Firebase generates an anonymous identifier (UUID) for each installation</li>
                     <li>Your data is stored locally on your device only</li>
                     <li>No personal information is collected or transmitted</li>
-                    <li>You can sign in later to sync your locally stored data</li>
+                    <li>You can use all features without creating an account or providing any personal information</li>
                 </ul>
 
                 <h2>9. Children's Privacy</h2>
-                <p>The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected such information, we will take steps to delete it promptly.</p>
+                <p>Since the App does not collect personal information, it can be used by users of all ages. Parents and guardians should supervise children's use of the App.</p>
 
                 <h2>10. Changes to This Privacy Policy</h2>
                 <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. The updated policy will be published within the App, and we will notify users of significant changes through appropriate channels.</p>
@@ -182,7 +143,6 @@
                 <h2>11. Contact Us</h2>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
                 <ul>
-                    <li><strong>In-App Feedback:</strong> Through the TestFlight feedback feature</li>
                     <li><strong>Email:</strong> <a href="mailto:tallyitdown_intl@proton.me" class="email-link">tallyitdown_intl@proton.me</a></li>
                 </ul>
                 <p>We will respond to your inquiries within a reasonable timeframe.</p>
@@ -197,7 +157,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 MB Master. All rights reserved.</p>
+            <p>&copy; 2026 Tally It Down. All rights reserved.</p>
         </div>
     </footer>
 </body>
