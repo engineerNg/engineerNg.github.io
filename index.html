@@ -3,68 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tally It Down - A simple and effective habit tracking app to help you build better daily routines.">
-    <title>Tally It Down - Habit Tracking App</title>
+    <meta name="description" content="Tally It Down — A low-friction health and symptom tracking app. Track mood, pain, energy, and sleep in 1–2 taps.">
+    <title>Tally It Down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="grain"></div>
+
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">Tally It Down</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <a href="index.html" class="nav-logo">Tally It Down</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="#support">Support</a>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="container">
-            <section class="hero">
-                <h1>Tally It Down</h1>
-                <p class="tagline">Build better habits, one day at a time.</p>
-                <p>A simple and effective habit tracking app designed to help you establish and maintain positive daily routines.</p>
-            </section>
-
-            <section id="support">
-                <div class="card">
-                    <h3>Technical Support</h3>
-                    <p>Need help or have questions? We're here to assist you.</p>
-                    <p>Contact us at:<br>
-                    <a href="mailto:tallyitdown_intl@proton.me" class="email-link">tallyitdown_intl@proton.me</a></p>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-mark" aria-hidden="true">
+                    <span class="mark-ring"></span>
+                    <span class="mark-dot"></span>
                 </div>
-            </section>
+                <h1>Tally It Down</h1>
+                <p class="tagline">Track less. Notice more.</p>
+                <p class="hero-desc">
+                    A low-friction health &amp; symptom tracker designed for people
+                    with chronic conditions. Record your mood, pain, energy, and sleep
+                    in one or two taps — then notice the patterns that matter.
+                </p>
+            </div>
+        </section>
 
-            <section id="privacy">
-                <h2>Privacy Policy</h2>
-                <p>We take your privacy seriously. Tally It Down is designed with privacy in mind, including:</p>
-                <ul>
-                    <li>Anonymous authentication via Firebase - no account required</li>
-                    <li>Data stored locally on your device</li>
-                    <li>Data stored locally on your device</li>
-                    <li>No selling of your personal data</li>
-                </ul>
-                <p><a href="privacy.html" class="btn">Read Full Privacy Policy</a></p>
-            </section>
+        <!-- Philosophy -->
+        <section class="philosophy">
+            <div class="section-inner">
+                <div class="philosophy-line" aria-hidden="true"></div>
+                <blockquote>
+                    Something is always better than nothing.<br>
+                    Keeping you engaged is what truly matters.
+                </blockquote>
+                <p class="philosophy-note">
+                    We believe simple recording you can sustain long-term yields
+                    far greater insight than comprehensive tracking you'll abandon.
+                </p>
+            </div>
+        </section>
 
-            <section id="features">
-                <h2>App Features</h2>
-                <p>Tally It Down helps you stay consistent with your habits through:</p>
-                <ul>
-                    <li>Simple daily check-ins</li>
-                    <li>Visual tracking of your progress</li>
-                    <li>Flexible habit categories and tags</li>
-                    <li>Anonymous authentication - no personal information required</li>
-                </ul>
-            </section>
-        </div>
+        <!-- Features -->
+        <section class="features" id="features">
+            <div class="section-inner">
+                <h2>What it does</h2>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="14" r="6"/>
+                                <path d="M20 22v4"/>
+                                <path d="M14 32c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+                            </svg>
+                        </div>
+                        <h3>Mood</h3>
+                        <p>Five-level mood scale — no emoji faces, no judgment. Just a quiet check-in with yourself.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 32h24"/>
+                                <path d="M12 32V20"/>
+                                <path d="M20 32V14"/>
+                                <path d="M28 32V8"/>
+                            </svg>
+                        </div>
+                        <h3>Pain &amp; Energy</h3>
+                        <p>0–10 NRS scales for pain intensity and energy level. Quick sliders, no forms.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 6c6 0 10 2 10 2v12c0 6-10 14-10 14S10 26 10 20V8s4-2 10-2z"/>
+                                <path d="M20 12v2"/>
+                            </svg>
+                        </div>
+                        <h3>Sleep Diary</h3>
+                        <p>Bedtime, wake time, quality score, and derived sleep efficiency. Import from Apple Health.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="20" r="12"/>
+                                <circle cx="20" cy="20" r="4"/>
+                                <path d="M20 8v4M20 28v4M8 20h4M28 20h4"/>
+                            </svg>
+                        </div>
+                        <h3>Custom Tags</h3>
+                        <p>Ten color-coded groups — diet, medication, exercise, stress, and more. Name them your way.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="6" y="6" width="28" height="28" rx="2"/>
+                                <path d="M6 14h28M14 6v28"/>
+                            </svg>
+                        </div>
+                        <h3>Review &amp; Trends</h3>
+                        <p>Weekly and monthly calendars. Advanced statistics with correlation analysis to find what affects you.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="20" r="10"/>
+                                <path d="M20 14v6l4 4"/>
+                            </svg>
+                        </div>
+                        <h3>Private &amp; Offline</h3>
+                        <p>Anonymous auth. No account needed. Your data stays on your device. Works fully offline.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Record Callout -->
+        <section class="callout">
+            <div class="section-inner">
+                <div class="callout-content">
+                    <p class="callout-number">1–2</p>
+                    <p class="callout-label">taps to complete a check-in</p>
+                </div>
+                <div class="callout-divider" aria-hidden="true"></div>
+                <p class="callout-text">
+                    The home screen shows only what you need: your tags for today.
+                    Tap once to record. That's it.
+                    No navigation, no forms, no friction.
+                </p>
+            </div>
+        </section>
+
+        <!-- Support -->
+        <section class="support" id="support">
+            <div class="section-inner">
+                <h2>Support</h2>
+                <p>Questions, feedback, or need help? We're here.</p>
+                <a href="mailto:tallyitdown_intl@proton.me" class="support-email">tallyitdown_intl@proton.me</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Tally It Down. All rights reserved.</p>
+        <div class="footer-inner">
+            <p>&copy; 2026 Tally It Down</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#support">Contact</a>
+            </div>
         </div>
     </footer>
 </body>
